@@ -1,0 +1,25 @@
+server:
+  port: 8888
+spring:
+  datasource:
+    driver-class-name: oracle.jdbc.driver.OracleDriver
+    url: jdbc:oracle:thin:@192.168.X.XX:1521/ORCLPDB
+    username: XXX
+    password: XXX
+  jpa:
+    database: oracle
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+#  redis:
+#    commandTimeout: 5000
+#    database: 0
+#    host: 172.18.9.223
+#    lettuce:
+#      pool:
+#        max-active: 8
+#        max-idle: 8
+#        max-wait: -1ms
+#        min-idle: 0
+#    password: ''
+#    port: 6378
